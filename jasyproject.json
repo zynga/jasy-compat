@@ -1,0 +1,128 @@
+{
+	"name" : "compatty",
+	"requires" : 
+	[
+		{
+			"source" : "../slang",
+			"config" :
+			{
+				"content" :
+				{
+					"slang" : [
+						"slang.js"
+					]
+				}
+			}
+		},	
+	
+		{
+			"source" : "../sizzle",
+			"config" :
+			{
+				"content" :
+				{
+					"Sizzle" : [
+						"sizzle.js"
+					]
+				}
+			}
+		},	
+	
+		{
+			"source" : "../nwevents",
+			"config" :
+			{
+				"content" :
+				{
+					"NW.Event" : [
+						"src/nwevents.js"
+					]
+				}
+			}
+		},
+	
+		{
+			"source" : "../Modernizr",
+			"config" :
+			{
+				"content" :
+				{
+					"Modernizr" : [
+						"modernizr.js"
+					]
+				}
+			}
+		},
+	
+		{
+			"source" : "../LABjs",
+			"config" :
+			{
+				"content" :
+				{
+					"$LAB" : [
+						"LAB.js"
+					]
+				}
+			}
+		},
+		
+		{
+			"source" : "../XRegExp",
+			"config" :
+			{
+				"content" :
+				{
+					"XRegExp" : [
+						"src/xregexp.js"
+					]
+				}
+			}
+		},
+		
+		{
+			"source" : "../hogan.js",
+			"config" :
+			{
+				"content" :
+				{
+					"Hogan" : 
+					[
+						"lib/template.js",
+						"lib/compiler.js"
+					]
+				}
+			}
+		},		
+		
+		{
+			"source" : "../history.js",
+			"config" :
+			{
+				"content" :
+				{
+					"History" : 
+					[
+						"scripts/uncompressed/history.js",
+						"scripts/uncompressed/history.html4.js",
+						"scripts/uncompressed/history.adapter.native.js"
+					]
+				}
+			}
+		},
+
+		{
+			"source" : "../underscore",
+			"config" :
+			{
+				"content" :
+				{
+					"_" : [
+						"underscore.js"
+					]
+				}
+			}
+		}
+	]
+}
+
