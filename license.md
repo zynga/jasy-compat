@@ -1,23 +1,3 @@
-Demonstrates usage of Jasy with unmodified 3rd party content.
-
-## Status
-
-Currently offers configs for:
-
-* Slang
-* Sizzle
-* NW Events
-* Modernizr
-* LABjs
-* XRegExp
-* Hogan.js
-* History.js
-* Underscore
-
-Feel free to send pull requests for further additions.
-
-## License
-
 Copyright (c) 2011-2012 Zynga Inc. http://zynga.com/
 
 Permission is hereby granted, free of charge, to any person obtaining
