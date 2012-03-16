@@ -11,7 +11,7 @@ def build(dest="build"):
     classes = Sorter(resolver).getSortedClasses()
     
     storeCompressed("%s/script/main.js" % dest, classes)
-    copyFile("source/index.html", "build/index.html")
+    copyFile("source/index.html", "%s/index.html" % dest)
     
     
 @task("Source")
