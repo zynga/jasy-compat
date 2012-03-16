@@ -2,8 +2,7 @@
 
 @task("Build")
 def build(dest="build"):
-    resolver = Resolver()
-    resolver.addClassName("compatty.Main")
+    resolver = Resolver().addClassName("compatty.Main")
     
     asset = Asset(resolver.getIncludedClasses())
     kernelClasses = storeKernel("%s/script/kernel.js" % dest, debug=True, assets=asset.exportBuild(buildFolder=dest))
@@ -17,8 +16,7 @@ def build(dest="build"):
     
 @task("Source")
 def source():
-    resolver = Resolver()
-    resolver.addClassName("compatty.Main")
+    resolver = Resolver().addClassName("compatty.Main")
 
     asset = Asset(resolver.getIncludedClasses())
     kernelClasses = storeKernel("source/script/kernel.js", debug=True, assets=asset.exportSource())
