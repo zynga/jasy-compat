@@ -2,6 +2,25 @@
 	"name" : "compatty",
 	"requires" : 
 	[
+		"../core",
+	
+		{
+			"source" : "../qunit",
+			"config" :
+			{
+				"content" :
+				{
+					"QUnit" : [
+						"qunit/qunit.js"
+					],
+					
+					"qunit.css" : [
+						"qunit/qunit.css"
+					]
+				}
+			}
+		},	
+	
 		{
 			"source" : "../slang",
 			"config" :

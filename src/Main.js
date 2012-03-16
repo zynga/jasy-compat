@@ -1,8 +1,15 @@
 /**
  * Test for playing with 3rd party code
+ *
+ * #asset(qunit.css)
  */
 (function() {
 
+	core.io.Asset.load(["qunit.css"], function() {
+		console.debug("QUnit style sheet loaded!");
+	});
+
+	console.debug("Has QUnit Object:", !!QUnit);
 	console.debug("Has Slang Object:", !!slang);
 	console.debug("Has Sizzle Object:", !!Sizzle);
 	console.debug("Has NWEvents Object:", !!NW.Event);
