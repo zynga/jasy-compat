@@ -1,19 +1,17 @@
 #!/usr/bin/env jasy
 
 @task("Build")
-def build():
-    buildFolder = "build"
-    
+def build(dest="build"):
     resolver = Resolver()
     resolver.addClassName("compatty.Main")
     
     asset = Asset(resolver.getIncludedClasses())
-    kernelClasses = storeKernel("%s/script/kernel.js" % buildFolder, debug=True, assets=asset.exportBuild(buildFolder=buildFolder))
+    kernelClasses = storeKernel("%s/script/kernel.js" % dest, debug=True, assets=asset.exportBuild(buildFolder=dest))
     
     resolver.excludeClasses(kernelClasses)
     classes = Sorter(resolver).getSortedClasses()
     
-    storeCompressed("%s/script/main.js" % buildFolder, classes)
+    storeCompressed("%s/script/main.js" % dest, classes)
     copyFile("source/index.html", "build/index.html")
     
     
