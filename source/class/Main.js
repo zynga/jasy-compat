@@ -1,14 +1,17 @@
 /**
  * Test for playing with 3rd party code
  *
- * #asset(qunit.css)
+ * #asset(qunit-xyz.css)
  */
 (function() {
 
-	core.io.Asset.load(["qunit.css"], function() {
+	// Asset loading feature tests
+	// Use the name of the files you have defined in your jasyproject.conf
+	core.io.Asset.load(["qunit-xyz.css"], function() {
 		console.debug("QUnit style sheet loaded!");
 	});
 
+	// Testing existance of classes/modules
 	console.debug("Has QUnit Object:", !!QUnit);
 	console.debug("Has Slang Object:", !!slang);
 	console.debug("Has Sizzle Object:", !!Sizzle);

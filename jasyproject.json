@@ -14,7 +14,7 @@
 						"qunit/qunit.js"
 					],
 					
-					"qunit.css" : [
+					"qunit-xyz.css" : [
 						"qunit/qunit.css"
 					]
 				}
