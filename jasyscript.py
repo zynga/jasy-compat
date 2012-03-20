@@ -1,27 +1,35 @@
 #!/usr/bin/env jasy
 
+@task("Clean")
+def clean():
+    session.clearCache()
+
 @task("Build")
-def build(dest="build"):
+def build():
+    setPrefix("build")
+    
     resolver = Resolver().addClassName("compatty.Main")
     
     asset = Asset(resolver.getIncludedClasses())
-    kernelClasses = storeKernel("%s/script/kernel.js" % dest, debug=True, assets=asset.exportBuild(buildFolder=dest))
+    kernelClasses = storeKernel("script/kernel.js", debug=True, assets=asset.exportBuild())
     
     resolver.excludeClasses(kernelClasses)
     classes = Sorter(resolver).getSortedClasses()
     
-    storeCompressed("%s/script/main.js" % dest, classes)
-    copyFile("source/index.html", "%s/index.html" % dest)
+    storeCompressed("script/main.js", classes)
+    copyFile("source/index.html", "index.html")
     
     
 @task("Source")
 def source():
+    setPrefix("source")
+    
     resolver = Resolver().addClassName("compatty.Main")
 
     asset = Asset(resolver.getIncludedClasses())
-    kernelClasses = storeKernel("source/script/kernel.js", debug=True, assets=asset.exportSource())
+    kernelClasses = storeKernel("script/kernel.js", debug=True, assets=asset.exportSource())
 
     resolver.excludeClasses(kernelClasses)
     classes = Sorter(resolver).getSortedClasses()
 
-    storeSourceLoader("source/script/main.js", classes)
+    storeSourceLoader("script/main.js", classes)
