@@ -1,35 +1,36 @@
-#!/usr/bin/env jasy
+# Jasy Compat - JavaScript Foundation
+# Copyright 2012 Zynga Inc.
 
 @task("Clean")
 def clean():
     session.clearCache()
+    
+    
+@task("Distclean")
+def distclean():
+    session.clearCache()
+    removeDir("build")
+    removeDir("source/script")
+    
 
 @task("Build")
 def build():
-    setPrefix("build")
-    
     resolver = Resolver().addClassName("compatty.Main")
     
     asset = Asset(resolver.getIncludedClasses())
-    kernelClasses = storeKernel("script/kernel.js", debug=True, assets=asset.exportBuild())
+    kernelClasses = storeKernel("script/kernel.js", assets=asset.exportBuild())
     
     resolver.excludeClasses(kernelClasses)
-    classes = Sorter(resolver).getSortedClasses()
-    
-    storeCompressed("script/main.js", classes)
+    storeCompressed("script/main.js", Sorter(resolver).getSortedClasses())
     copyFile("source/index.html", "index.html")
     
     
 @task("Source")
 def source():
-    setPrefix("source")
-    
     resolver = Resolver().addClassName("compatty.Main")
 
     asset = Asset(resolver.getIncludedClasses())
-    kernelClasses = storeKernel("script/kernel.js", debug=True, assets=asset.exportSource())
+    kernelClasses = storeKernel("script/kernel.js", assets=asset.exportSource())
 
     resolver.excludeClasses(kernelClasses)
-    classes = Sorter(resolver).getSortedClasses()
-
-    storeSourceLoader("script/main.js", classes)
+    storeSourceLoader("script/main.js", Sorter(resolver).getSortedClasses())
