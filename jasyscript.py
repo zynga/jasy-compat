@@ -17,7 +17,7 @@ def distclean():
 def build():
     resolver = Resolver().addClassName("compatty.Main")
     
-    asset = Asset(resolver.getIncludedClasses())
+    asset = AssetManager(resolver.getIncludedClasses())
     kernelClasses = storeKernel("script/kernel.js", assets=asset.exportBuild())
     
     resolver.excludeClasses(kernelClasses)
@@ -29,7 +29,7 @@ def build():
 def source():
     resolver = Resolver().addClassName("compatty.Main")
 
-    asset = Asset(resolver.getIncludedClasses())
+    asset = AssetManager(resolver.getIncludedClasses())
     kernelClasses = storeKernel("script/kernel.js", assets=asset.exportSource())
 
     resolver.excludeClasses(kernelClasses)
