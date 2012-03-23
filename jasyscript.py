@@ -33,4 +33,4 @@ def source():
     kernelClasses = storeKernel("script/kernel.js", assets=asset.exportSource())
 
     resolver.excludeClasses(kernelClasses)
-    storeSourceLoader("script/main.js", Sorter(resolver).getSortedClasses())
+    storeLoader("script/main.js", Sorter(resolver).getSortedClasses())
