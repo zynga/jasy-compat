@@ -3,12 +3,12 @@
 
 @task("Clean")
 def clean():
-    session.clearCache()
+    session.clean()
     
     
 @task("Distclean")
 def distclean():
-    session.clearCache()
+    session.clean()
     removeDir("build")
     removeDir("source/script")
     
