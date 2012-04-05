@@ -2,8 +2,6 @@
 	"name" : "compatty",
 	"requires" : 
 	[
-		"../core",
-	
 		{
 			"source" : "https://github.com/jquery/qunit.git",
 			"version" : "refs/tags/v1.5.0",
