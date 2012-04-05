@@ -5,7 +5,8 @@
 		"../core",
 	
 		{
-			"source" : "../qunit",
+			"source" : "https://github.com/jquery/qunit.git",
+			"version" : "refs/tags/v1.5.0",
 			"config" :
 			{
 				"content" :
@@ -22,7 +23,7 @@
 		},	
 	
 		{
-			"source" : "../slang",
+			"source" : "https://github.com/devongovett/slang.git",
 			"config" :
 			{
 				"content" :
@@ -35,7 +36,7 @@
 		},	
 	
 		{
-			"source" : "../sizzle",
+			"source" : "https://github.com/jquery/sizzle.git",
 			"config" :
 			{
 				"content" :
@@ -48,7 +49,7 @@
 		},	
 	
 		{
-			"source" : "../nwevents",
+			"source" : "https://github.com/dperini/nwevents.git",
 			"config" :
 			{
 				"content" :
@@ -61,7 +62,7 @@
 		},
 	
 		{
-			"source" : "../Modernizr",
+			"source" : "https://github.com/Modernizr/Modernizr.git",
 			"config" :
 			{
 				"content" :
@@ -74,7 +75,7 @@
 		},
 	
 		{
-			"source" : "../LABjs",
+			"source" : "https://github.com/getify/LABjs.git",
 			"config" :
 			{
 				"content" :
@@ -87,7 +88,7 @@
 		},
 		
 		{
-			"source" : "../XRegExp",
+			"source" : "https://github.com/slevithan/XRegExp.git",
 			"config" :
 			{
 				"content" :
@@ -100,7 +101,7 @@
 		},
 		
 		{
-			"source" : "../hogan.js",
+			"source" : "https://github.com/twitter/hogan.js.git",
 			"config" :
 			{
 				"content" :
@@ -115,7 +116,7 @@
 		},		
 		
 		{
-			"source" : "../history.js",
+			"source" : "https://github.com/balupton/history.js.git",
 			"config" :
 			{
 				"content" :
@@ -131,7 +132,7 @@
 		},
 
 		{
-			"source" : "../underscore",
+			"source" : "https://github.com/documentcloud/underscore.git",
 			"config" :
 			{
 				"content" :
