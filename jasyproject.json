@@ -9,6 +9,7 @@
 			"version" : "refs/tags/v1.5.0",
 			"config" :
 			{
+				"name" : "qunit",
 				"content" :
 				{
 					"QUnit" : [
@@ -26,6 +27,7 @@
 			"source" : "https://github.com/devongovett/slang.git",
 			"config" :
 			{
+				"name" : "slang",
 				"content" :
 				{
 					"slang" : [
