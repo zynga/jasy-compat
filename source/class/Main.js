@@ -2,6 +2,7 @@
  * Test for playing with 3rd party code
  *
  * #asset(qunit-xyz.css)
+ * #require(core.io.StyleSheet)
  */
 (function() {
 

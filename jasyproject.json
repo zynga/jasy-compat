@@ -1,12 +1,16 @@
 {
 	"name" : "compatty",
+
 	"requires" : 
 	[
-		"https://github.com/zynga/core.git",
-		
+		{
+			"source" : "https://github.com/zynga/core.git",	
+			"version" : "0.8"
+		},
+				
 		{
 			"source" : "https://github.com/jquery/qunit.git",
-			"version" : "refs/tags/v1.5.0",
+			"version" : "v1.5.0",
 			"config" :
 			{
 				"name" : "qunit",
@@ -39,7 +43,7 @@
 	
 		{
 			"source" : "https://github.com/jquery/sizzle.git",
-			"version" : "refs/tags/1.5.1",
+			"version" : "1.5.1",
 			"config" :
 			{
 				"content" :
@@ -66,7 +70,7 @@
 	
 		{
 			"source" : "https://github.com/Modernizr/Modernizr.git",
-			"version" : "refs/tags/v2.5.3",
+			"version" : "v2.6.2",
 			"config" :
 			{
 				"content" :
@@ -80,7 +84,7 @@
 	
 		{
 			"source" : "https://github.com/getify/LABjs.git",
-			"version" : "refs/tags/2.0",
+			"version" : "2.0",
 			"config" :
 			{
 				"content" :
@@ -94,6 +98,7 @@
 		
 		{
 			"source" : "https://github.com/slevithan/xregexp.git",
+			"version" : "v2.0.0",
 			"config" :
 			{
 				"content" :
@@ -138,7 +143,7 @@
 
 		{
 			"source" : "https://github.com/documentcloud/underscore.git",
-			"version" : "refs/tags/1.3.1",
+			"version" : "1.3.3",
 			"config" :
 			{
 				"content" :
