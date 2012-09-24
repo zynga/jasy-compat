@@ -1,0 +1,70 @@
+name: jasycompat
+requires:
+
+- source: https://github.com/zynga/core.git
+  version: 0.8
+ 
+- source: git://github.com/jquery/jquery.git
+  version: 1.8.2
+
+- source: git://github.com/jquery/jquery-ui.git
+  version: 1.8.22
+
+- source: https://github.com/jquery/qunit.git
+  version: v1.5.0
+  config:
+    content:
+      QUnit: [qunit/qunit.js]
+      qunit-xyz.css: [qunit/qunit.css]
+
+- source: https://github.com/devongovett/slang.git
+  config:
+    name: slang
+    content:
+      slang: [slang.js]
+
+- source: https://github.com/jquery/sizzle.git
+  version: 1.5.1
+  config:
+    content:
+      Sizzle: [sizzle.js]
+
+- source: https://github.com/dperini/nwevents.git
+  config:
+    content:
+      NW.Event: [src/nwevents.js]
+
+- source: https://github.com/Modernizr/Modernizr.git
+  version: v2.6.2
+  config:
+    content:
+      Modernizr: [modernizr.js]
+
+- source: https://github.com/getify/LABjs.git
+  version: '2.0'
+  config:
+    content:
+      $LAB: [LAB.js]
+
+- source: https://github.com/slevithan/xregexp.git
+  version: v2.0.0
+  config:
+    content:
+      XRegExp: [src/xregexp.js]
+
+- source: https://github.com/twitter/hogan.js.git
+  config:
+    content:
+      Hogan: [lib/template.js, lib/compiler.js]
+
+- source: https://github.com/balupton/history.js.git
+  config:
+    content:
+      History: [scripts/uncompressed/history.js, scripts/uncompressed/history.html4.js,
+        scripts/uncompressed/history.adapter.native.js]
+
+- source: https://github.com/documentcloud/underscore.git
+  version: 1.3.3
+  config:
+    content:
+      _: [underscore.js]
