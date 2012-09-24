@@ -12,7 +12,7 @@ requires:
       - grunt build
     content:
       $:
-      dist/jquery.js 
+      - dist/jquery.js 
 
 - source: git://github.com/jquery/jquery-ui.git
   version: 1.8.22
