@@ -7,30 +7,12 @@ requires:
 - source: git://github.com/jquery/jquery.git
   version: 1.8.2
   config:
+    setup:
+      - npm install
+      - grunt build
     content:
       $:
-      - src/core.js
-      - src/callbacks.js
-      - src/deferred.js
-      - src/support.js
-      - src/data.js
-      - src/queue.js
-      - src/attributes.js
-      - src/event.js
-      - src/sizzle-jquery.js
-      - src/sizzle/sizzle.js
-      - src/traversing.js
-      - src/manipulation.js
-      - src/css.js
-      - src/serialize.js
-      - src/ajax.js
-      - src/ajax/jsonp.js
-      - src/ajax/script.js
-      - src/ajax/xhr.js
-      - src/effects.js
-      - src/offset.js
-      - src/dimensions.js
-      - src/exports.js
+      dist/jquery.js 
 
 - source: git://github.com/jquery/jquery-ui.git
   version: 1.8.22
