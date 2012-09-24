@@ -13,6 +13,7 @@
 	});
 
 	// Testing existance of classes/modules
+	console.debug("Has jQuery Object:", !!$)
 	console.debug("Has QUnit Object:", !!QUnit);
 	console.debug("Has Slang Object:", !!slang);
 	console.debug("Has Sizzle Object:", !!Sizzle);
