@@ -9,7 +9,7 @@ requires:
   config:
     setup:
       - npm install
-      - grunt build
+      - grunt
     content:
       $:
       - dist/jquery.js 
