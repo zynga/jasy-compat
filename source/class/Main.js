@@ -2,6 +2,7 @@
  * Test for playing with 3rd party code
  *
  * #asset(qunit-xyz.css)
+ * #asset(jquery-ui.css)
  * #require(core.io.StyleSheet)
  */
 (function() {
@@ -12,8 +13,13 @@
 		console.debug("QUnit style sheet loaded!");
 	});
 
+	core.io.Asset.load(["jquery-ui.css"], function() {
+		console.debug("jQuery UI style sheet loaded!");
+	});
+
 	// Testing existance of classes/modules
 	console.debug("Has jQuery Object:", !!$)
+	console.debug("Has jQuery UI Object:", !!$.ui)
 	console.debug("Has QUnit Object:", !!QUnit);
 	console.debug("Has Slang Object:", !!slang);
 	console.debug("Has Sizzle Object:", !!Sizzle);

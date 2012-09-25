@@ -4,6 +4,18 @@ requires:
 - source: https://github.com/zynga/core.git
   version: 0.8
  
+- source: git://github.com/jquery/jquery-ui.git
+  version: 1.8.22
+  config:
+    setup:
+      - npm install
+      - grunt concat
+    content:
+      $.ui:
+        - dist/jquery-ui.js
+      jquery-ui.css:
+        - dist/jquery-ui.css
+
 - source: git://github.com/jquery/jquery.git
   version: 1.8.2
   config:
@@ -11,11 +23,8 @@ requires:
       - npm install
       - grunt
     content:
-      $:
-      - dist/jquery.js 
-
-- source: git://github.com/jquery/jquery-ui.git
-  version: 1.8.22
+      jQuery:
+      - dist/jquery.js         
 
 - source: https://github.com/jquery/qunit.git
   version: v1.5.0
