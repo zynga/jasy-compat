@@ -1,8 +1,8 @@
-Demonstrates usage of Jasy with unmodified 3rd party content.
+Demonstrates usage of Jasy with unmodified 3rd party JavaScript libraries.
 
 ## Status
 
-Currently offers configs for:
+Currently Jasy Compat includes configurations for:
 
 * jQuery
 * jQuery UI
