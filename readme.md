@@ -4,6 +4,9 @@ Demonstrates usage of Jasy with unmodified 3rd party content.
 
 Currently offers configs for:
 
+* jQuery
+* jQuery UI
+* QUnit
 * Slang
 * Sizzle
 * NW Events
@@ -15,6 +18,14 @@ Currently offers configs for:
 * Underscore
 
 Feel free to send pull requests for further additions.
+
+## Compatibility
+
+This project makes use of recent features add to [Jasy](http://github.com/zynga/jasy) like remote repositories, Git submodules, project setup logic etc. Please update to newest Jasy to use the current version here on Github or checkout a good candidate from this list:
+
+* *0.8.1*: Jasy >= 0.8.1 / Core >= 0.8.1
+* *0.8*: Jasy 0.8 / Core 0.8
+* *0.7*: Jasy 0.7.x / Core 0.7.x
 
 ## License
 
