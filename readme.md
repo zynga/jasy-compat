@@ -23,9 +23,11 @@ Feel free to send pull requests for further additions.
 
 This project makes use of recent features add to [Jasy](http://github.com/zynga/jasy) like remote repositories, Git submodules, project setup logic etc. Please update to newest Jasy to use the current version here on Github or checkout a good candidate from this list:
 
-* *0.8.1*: Jasy >= 0.8.1 / Core >= 0.8.1
-* *0.8*: Jasy 0.8 / Core 0.8
-* *0.7*: Jasy 0.7.x / Core 0.7.x
+* **0.8.1**: Jasy >= 0.8.1
+* **0.8**: Jasy = 0.8
+* **0.7**: Jasy = 0.7.x
+
+Note: The project also uses the *Core* library offered in conjunction to Jasy. It is automatically chosen in a compatible way by the versioned configuration in Jasy Compat.
 
 ## License
 
