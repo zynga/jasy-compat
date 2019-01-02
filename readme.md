@@ -1,3 +1,7 @@
+**Please note:** This project is deprecated at Zynga and is no longer maintained.
+
+---
+
 Demonstrates usage of Jasy with unmodified 3rd party JavaScript libraries.
 
 ## Status
